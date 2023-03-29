@@ -9,6 +9,7 @@ npm install --save-dev pactum
 npm install --save-dev mocha
 
 or you can simply use
+
 npx pactum-init
 
 ----------
