@@ -5,8 +5,9 @@
 npm install --save-dev pactum
 
 # install a test runner to run pactum tests
-# mocha / jest / cucumber
+
 npm install --save-dev mocha
+
 or you can simply use
 
 npx pactum-init
