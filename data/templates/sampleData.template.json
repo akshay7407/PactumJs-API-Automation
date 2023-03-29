@@ -1,0 +1,40 @@
+{
+    "User": {
+    "name": "$M{User.name}",
+    "job": "$M{User.job}",
+    "test":"testing",
+    "status":"$M{User.status}"
+  },
+  "User1": {
+    "name": "Akshay Gaikwad",
+    "job": "QA",
+    "test":"testing",
+    "status":"On bench"
+  },
+  "AddPlace":{
+    
+      "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+      },
+      "accuracy": 50,
+      "name": "Aurangabad , Maharashtra",
+      "phone_number": "(+91) 983 893 3937",
+      "address": "29, side layout, cohen 09",
+      "types": [
+        "shoe park",
+        "shop"
+      ],
+      "website": "http://google.com",
+      "language": "French-IN"
+  },
+
+  "updateAdd":{
+      "place_id":"1c7b6561c13b4d32282a373748b15109",
+      "address":"giga space pune, 411014",
+       "phone_number": "(+91) 983 893 7407",
+      "key":"qaclick123"     
+  }
+  
+
+}
