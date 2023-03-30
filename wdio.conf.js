@@ -23,7 +23,10 @@ export const config = {
     // will be called from there.
     //
     specs: [
-        './API-Testing-PactumJs/test/api_automation/test2.js'
+        './test/api_automation/test2.js',
+        './test/api_automation/get.request.apiPractise.js',
+        './test/api_automation/post.request.apiPractise.js',
+        './test/api_automation/basicApi.js'
     ],
     // Patterns to exclude.
     exclude: [
