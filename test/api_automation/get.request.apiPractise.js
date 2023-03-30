@@ -16,13 +16,27 @@ describe('Get requests', () => {
         console.log('*************************User title is ====' + JSON.stringify(data))
     })
 
-    it.only('get all users title and users count  ', async () => {
+    it('get all users title and users count  ', async () => {
 
-        let titles = await spec().get('https://jsonplaceholder.typicode.com/posts').returns((ctx) => { return ctx.res.body });
-        for (let eleme of titles) {
+        let users = await spec().get('https://jsonplaceholder.typicode.com/posts').returns((ctx) => { return ctx.res.body });
+        for (let eleme of users) {
             console.log("******************this is my  tile*****" + JSON.stringify(eleme.title))
         }
-        console.log("Number of users " + titles.length)
+        console.log("Number of users " + users.length)
+
+    })
+
+    it('get all users id and get all sum count of ID ', async () => {
+        let sumID = 0;
+        let idCount = 0;
+        let user = await spec().get('https://jsonplaceholder.typicode.com/posts').returns((ctx) => { return ctx.res.body });
+        for (let eleme of user) {
+            sumID += eleme.id
+            idCount++
+        }
+        console.log("Sum of all ID *************************" + sumID)
+        console.log("Count of ID *************************" + idCount)
+
     })
 
 
