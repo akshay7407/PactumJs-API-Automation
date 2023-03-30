@@ -9,7 +9,6 @@
     "@wdio/local-runner": "^8.2.4",
     "@wdio/mocha-framework": "^8.2.3",
     "@wdio/spec-reporter": "^8.1.2",
-    "chromedriver": "^108.0.0",
     "mocha": "^10.2.0",
     "pactum": "^3.3.2",
     "pactum-json-reporter": "^1.0.2",
@@ -19,6 +18,7 @@
     "test": "npx wdio run ./wdio.conf.js"
   },
   "dependencies": {
+    "chromedriver": "^111.0.0",
     "expect-webdriverio": "^4.1.1",
     "uvu": "^0.5.6"
   }
