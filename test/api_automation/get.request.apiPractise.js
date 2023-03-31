@@ -51,5 +51,14 @@ describe('Get HTTP API requests ', () => {
 
     });
 
+    it('Get users from rapiapi and validate it', async () => {
+
+        let data = await spec().get('https://rapidapi.com/learn/api/rest').expectStatus(200).returns('data')
+        for (let name of data) {
+            console.log('********************get all last names*******  ' + name.last_name)
+        }
+
+    });
+
 
 });
