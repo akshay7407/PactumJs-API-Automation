@@ -60,5 +60,4 @@ describe('Get HTTP API requests ', () => {
 
     });
 
-
 });
