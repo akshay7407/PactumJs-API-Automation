@@ -3,7 +3,8 @@
     "User": {
         "name":"paresh",
         "job":"QA engineer",
-        "status": "On bench"
+        "status": "On bench",
+        "title" :"Software testing"
       }
       
 }

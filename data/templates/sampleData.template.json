@@ -34,7 +34,14 @@
       "address":"giga space pune, 411014",
        "phone_number": "(+91) 983 893 7407",
       "key":"qaclick123"     
-  }
+  },
+
+  "updateTitlePut":{
+    "userId": 1,
+    "id": 1,
+    "title": "$M{User.title}",
+    "body": "Akshay Gaikwad is an software test engineer\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
   
 
 }

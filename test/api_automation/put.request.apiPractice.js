@@ -1,5 +1,10 @@
 import pkg from 'pactum';
 const { spec, request, stash } = pkg;
+import path from 'path';
+
+//Load JSON template in the test case using stash.loaddata(path)
+const path1 = path.join(process.cwd(), "./data/")
+stash.loadData(path1)
 
 describe('PUT Http API requests', () => {
     it.only('should update title details', async () => {
@@ -11,8 +16,8 @@ describe('PUT Http API requests', () => {
         }
         await spec()
             .put(`https://jsonplaceholder.typicode.com/posts/1`)
-            .withJson(updatedDetails)
+            .withJson({ "@DATA:TEMPLATE@": "updateTitlePut" })
             .expectStatus(200)
-            .expectJson(updatedDetails).inspect();
+            .expectJson(updatedDetails).expectHeader("content-type", "application/json; charset=utf-8",).inspect();
     });
 });
