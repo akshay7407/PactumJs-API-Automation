@@ -26,7 +26,8 @@ export const config = {
         './test/api_automation/test2.js',
         './test/api_automation/get.request.apiPractise.js',
         './test/api_automation/post.request.apiPractise.js',
-        './test/api_automation/basicApi.js'
+        './test/api_automation/basicApi.js',
+        './test/api_automation/put.request.apiPractice.js'
     ],
     // Patterns to exclude.
     exclude: [

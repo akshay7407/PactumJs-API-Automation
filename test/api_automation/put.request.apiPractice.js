@@ -7,7 +7,7 @@ const path1 = path.join(process.cwd(), "./data/")
 stash.loadData(path1)
 
 describe('PUT Http API requests', () => {
-    it.only('should update title details', async () => {
+    it('should update title details', async () => {
         const updatedDetails = {
             "userId": 1,
             "id": 1,
