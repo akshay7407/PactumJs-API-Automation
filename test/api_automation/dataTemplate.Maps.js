@@ -1,6 +1,6 @@
 
 import pkg from 'pactum';
-const { stash,parse} = pkg
+const { stash, parse } = pkg
 stash.addDataMap({
   'User': {
     'FirstName': 'Jon',
@@ -18,9 +18,9 @@ stash.addDataTemplate({
     "House": "Castle Black"
   }
 })
-  
-it.only('should get a response with status code 200', async () => {
-    const address = parse({ '@DATA:TEMPLATE@': 'User' });
-    // prints { street: 'some street', pin: 100100 }
-    console.log(address); 
+
+it('should get a response with status code 200', async () => {
+  const address = parse({ '@DATA:TEMPLATE@': 'User' });
+  // prints { street: 'some street', pin: 100100 }
+  console.log(address);
 });

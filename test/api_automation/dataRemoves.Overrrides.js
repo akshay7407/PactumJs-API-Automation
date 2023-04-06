@@ -1,7 +1,7 @@
 import pkg from 'pactum';
 const { spec, request, stash, handler, moment, parse } = pkg;
 import path from 'path';
-// request.setBaseUrl('https://reqres.in');
+request.setBaseUrl('https://reqres.in');
 
 const path1 = path.join(process.cwd(), "./data/")
 
