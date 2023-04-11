@@ -20,4 +20,5 @@ describe('PUT Http API requests', () => {
             .expectStatus(200)
             .expectJson(updatedDetails).expectHeader("content-type", "application/json; charset=utf-8",).inspect();
     });
+
 });
